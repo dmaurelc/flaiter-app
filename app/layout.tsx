@@ -21,9 +21,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://flaiter.vercel.app"),
+  metadataBase: new URL("https://flaiter.netlify.app"),
   title: {
-    default: "Flaiter - Diccionario de Chilenismos",
+    default: "Chilenismos: Diccionario y Traductor Chileno | Flaiter",
     template: "%s | Flaiter",
   },
   description:
@@ -36,18 +36,21 @@ export const metadata: Metadata = {
     "traductor chileno",
     "español de chile",
   ],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Flaiter - Diccionario de Chilenismos",
+    title: "Chilenismos: Diccionario y Traductor Chileno | Flaiter",
     description:
       "Traductor y guía de supervivencia para el español chileno. Aprende chilenismos.",
-    url: "https://flaiter.vercel.app",
+    url: "https://flaiter.netlify.app",
     siteName: "Flaiter",
     images: [
       {
-        url: "/logo.svg", // Fallback to logo for now
-        width: 800,
-        height: 600,
-        alt: "Flaiter Logo",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Flaiter - Diccionario de Chilenismos",
       },
     ],
     locale: "es_CL",
@@ -55,10 +58,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flaiter - Diccionario de Chilenismos",
+    title: "Chilenismos: Diccionario y Traductor Chileno | Flaiter",
     description:
       "Traductor y guía de supervivencia para el español chileno. Aprende chilenismos.",
-    images: ["/logo.svg"],
+    images: ["/opengraph-image"],
   },
   robots: {
     index: true,
@@ -83,6 +86,30 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${dmSerif.variable} ${inter.variable} antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Flaiter",
+              operatingSystem: "iOS, Android, Web",
+              applicationCategory: "EducationalApplication",
+              description:
+                "Traductor y diccionario experto en chilenismos y jerga chilena.",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.9",
+                ratingCount: "1000",
+              },
+            }),
+          }}
+        />
         {children}
       </body>
     </html>

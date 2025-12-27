@@ -12,6 +12,7 @@ export default function Logo({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>Flaiter Logo - Diccionario de Chilenismos</title>
       <path
         d="M28 16C28 22.6274 22.6274 28 16 28C13.5284 28 11.2316 27.2024 9.32432 25.8277L4 27.5L5.80569 22.3787C4.66442 20.5188 4 18.3374 4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16Z"
         fill={color}

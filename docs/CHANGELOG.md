@@ -5,6 +5,20 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2025-12-27
+
+### Added
+
+- Generador dinámico de imágenes OpenGraph (`opengraph-image.tsx`).
+- Marcado de esquema (JSON-LD) para `SoftwareApplication`.
+- Configuración de URL canónica automática.
+
+### Changed
+
+- **SEO:** Optimizado el título para priorizar la palabra clave "Chilenismos".
+- **Metadata:** Actualizada `metadataBase` a la URL de producción en Netlify.
+- **Accesibilidad:** Agregado título descriptivo al SVG del Logo.
+
 ## [0.2.0] - 2025-12-27
 
 ### Added
