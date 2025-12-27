@@ -5,6 +5,13 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2] - 2025-12-27
+
+### Fixed
+
+- **SEO:** Eliminadas etiquetas `<title>` internas de los SVGs para evitar duplicidad de títulos en herramientas de auditoría.
+- **Favicon:** Configuración explícita de iconos en metadatos para resolver errores 404 en servicios de indexación.
+
 ## [0.2.1] - 2025-12-27
 
 ### Added

@@ -29,7 +29,7 @@ Se integró el esquema `SoftwareApplication` para ayudar a los motores de búsqu
 
 ### 4. Accesibilidad y SEO de Imágenes
 
-Se mejoró el atributo `alt` en componentes clave y se añadió un `<title>` al SVG del logo.
+Se mejoró el atributo `alt` en componentes clave. Para el Logo SVG, se utiliza `aria-label` y `role="img"` en lugar de `<title>` para evitar que los motores de búsqueda lo confundan con el título principal de la página.
 
 ### 5. Configuración Técnica
 
