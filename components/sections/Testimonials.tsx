@@ -90,7 +90,7 @@ function MarqueeTrack({
       {items.map((t, i) => (
         <div
           key={i}
-          className="flex flex-col gap-6 p-8 rounded-2xl bg-neutral-50 border border-neutral-100 w-[350px] flex-shrink-0"
+          className="flex flex-col gap-6 p-8 rounded-2xl bg-neutral-50 border border-neutral-100 w-[350px] shrink-0"
         >
           <div className="flex gap-1 mb-2">
             {[1, 2, 3, 4, 5].map((s) => (
@@ -102,7 +102,12 @@ function MarqueeTrack({
           </blockquote>
           <div className="flex items-center gap-4 mt-auto pt-6 border-t border-neutral-200/50">
             <div className="relative w-10 h-10 rounded-full overflow-hidden border border-neutral-200">
-              <Image src={t.image} alt={t.name} fill className="object-cover" />
+              <Image
+                src={t.image}
+                alt={`Retrato de ${t.name}, usuario de Flaiter proveniente de ${t.role}`}
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <div className="font-bold text-sm text-black font-sans">

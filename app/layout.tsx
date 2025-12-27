@@ -23,14 +23,23 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://flaiter.vercel.app"),
   title: {
-    default: "Flaiter - Diccionario Chileno",
+    default: "Flaiter - Diccionario de Chilenismos",
     template: "%s | Flaiter",
   },
   description:
-    "Traductor y guía de supervivencia para el español chileno. Aprende jerga, modismos y expresiones chilenas.",
+    "Traductor y guía de supervivencia para el español chileno. Aprende jerga, modismos y chilenismos con nuestra IA experta.",
+  keywords: [
+    "chilenismos",
+    "diccionario chileno",
+    "jerga chilena",
+    "modismos chilenos",
+    "traductor chileno",
+    "español de chile",
+  ],
   openGraph: {
-    title: "Flaiter - Diccionario Chileno",
-    description: "Traductor y guía de supervivencia para el español chileno.",
+    title: "Flaiter - Diccionario de Chilenismos",
+    description:
+      "Traductor y guía de supervivencia para el español chileno. Aprende chilenismos.",
     url: "https://flaiter.vercel.app",
     siteName: "Flaiter",
     images: [
@@ -46,8 +55,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Flaiter - Diccionario Chileno",
-    description: "Traductor y guía de supervivencia para el español chileno.",
+    title: "Flaiter - Diccionario de Chilenismos",
+    description:
+      "Traductor y guía de supervivencia para el español chileno. Aprende chilenismos.",
     images: ["/logo.svg"],
   },
   robots: {

@@ -105,7 +105,7 @@ export default function AppShowcase() {
                           >
                             <Image
                               src={src}
-                              alt="User"
+                              alt="Retrato de usuario satisfecho usando la app de chilenismos"
                               fill
                               className="object-cover"
                             />

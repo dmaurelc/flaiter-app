@@ -28,7 +28,7 @@ export default function Features() {
           {/* 1. Large Feature (2x2) */}
           <FadeIn
             delay={0.2}
-            className="md:col-span-2 md:row-span-2 bg-card text-card-foreground rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between transition-all hover:shadow-md overflow-hidden relative group hover:shadow-2xl hover:shadow-neutral-200/50 transition-all duration-500"
+            className="md:col-span-2 md:row-span-2 bg-card text-card-foreground rounded-3xl p-8 border border-border shadow-sm flex flex-col justify-between overflow-hidden relative group hover:shadow-2xl hover:shadow-neutral-200/50 transition-all duration-500"
           >
             <div className="relative z-10">
               <div className="w-14 h-14 bg-black text-white rounded-full flex items-center justify-center mb-8">
@@ -55,7 +55,7 @@ export default function Features() {
           {/* 2. Top Right Horizontal (2x1) */}
           <FadeIn
             delay={0.3}
-            className="md:col-span-2 md:row-span-1 bg-black text-white p-10 rounded-[2rem] flex flex-col md:flex-row items-center justify-between overflow-hidden relative group"
+            className="md:col-span-2 md:row-span-1 bg-black text-white p-10 rounded-4xl flex flex-col md:flex-row items-center justify-between overflow-hidden relative group"
           >
             <div className="relative z-10 flex-1">
               <h3 className="text-2xl font-serif mb-2">Base de Datos Viva</h3>
@@ -71,7 +71,7 @@ export default function Features() {
           {/* 3. Bottom Left Small (1x1) */}
           <FadeIn
             delay={0.4}
-            className="md:col-span-1 md:row-span-1 bg-white p-8 rounded-[2rem] border border-neutral-200 flex flex-col justify-center items-center text-center hover:bg-neutral-100 transition-colors"
+            className="md:col-span-1 md:row-span-1 bg-white p-8 rounded-4xl border border-neutral-200 flex flex-col justify-center items-center text-center hover:bg-neutral-100 transition-colors"
           >
             <WifiOff className="w-10 h-10 mb-6 text-neutral-800" />
             <h3 className="text-xl font-serif">Offline</h3>
@@ -87,7 +87,7 @@ export default function Features() {
           >
             <Image
               src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=500&fit=crop"
-              alt="Social Gathering"
+              alt="Grupo de amigos chilenos y extranjeros compartiendo en una reunión social usando chilenismos"
               fill
               className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 hover:scale-110"
             />

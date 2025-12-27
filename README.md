@@ -65,6 +65,12 @@
     npm start
     ```
 
+## 📖 Documentación y Progreso
+
+- **[ROADMAP.md](./docs/ROADMAP.md)**: Visión a futuro y planes de desarrollo.
+- **[CHANGELOG.md](./docs/CHANGELOG.md)**: Historial detallado de cambios y versiones.
+- **[Optimización SEO](./docs/seo-optimization.md)**: Detalles técnicos sobre la estrategia SEO aplicada.
+
 ## 📂 Estructura del Proyecto
 
 ```
